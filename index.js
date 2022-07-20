@@ -106,6 +106,10 @@ app.get('/', (req, res) => {
     res.send('Genius Car Service Running');
 })
 
+app.get('/hero', (req, res) => {
+    res.send('hero meets heroku')
+})
+
 app.listen(port, () => {
     console.log("Genius Car Services Running at ", port);
 });
